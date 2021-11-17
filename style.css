@@ -65,44 +65,29 @@ footer {
   background-color: #aaa;
 }
 
-@media screen and (max-width: 768px) {}
-
-
-
+@media screen and (max-width: 768px) {
   header {
-    width:100%;
-    height: 120px;
+    height: 50px;
+    width: 100%;
   }
 
   main {
-    width: 100%;
     display: block;
+    width: 100%;
   }
 
   .step-box {
-    width: 96%;
-    margin: 80px 20px;
-    padding: 0px 20px;
-  }
-  .step-box:last-child {
-    margin-right: none;
-    margin-bottom: 150px;
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .step-box:first-child {
-    margin-top: 150px;
+  .step-box:not(.last) {
+    margin-bottom: 20px;
   }
 
-  .step-img1 , .step-img2 , .step-img3{
-    height: 400px;
-  }
+.step-box:last-child {
+  margin-right: auto;
+}
 
-  .step-num {
-    font-size: 40px;
-  }
 
-  footer {
-    width: 100%;
-    height: 120px;
-  }
 }
